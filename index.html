@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp template</title>
+  <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Atlikėjai</h1>
+  </header>
+
+  <div id="Rocky" class="tabcontent">
+    <h1>A$AP Rocky</h1>
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <img src="/pictures/asap-rocky-new-album.webp" alt="pic">
+    <p class="list">2007 m. atlikėjas tapo<span tabindex="0" data-descr="2014-2015 m. BET Awards Nominuoti geriausia grupe."> A$AP Mob
+    </span>dalimi, kompanijos iš Harlemo miesto nariu. Ją sudarė - reperių, prodiucerių, muzikos video klipų kūrėjų, mados dizainerių ir motociklininkų sričių atstovai, kurie puoselėjo panašią muzikos, mados, stiliaus ir meno kultūrą.</p>
+  </div>
+  
+  <div id="YungBlud" class="tabcontent">
+    <h1>YungBlud</h1>
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <img src="/pictures/YUNGBLUD45.jpg" alt="pic">
+    <p>Atlikėjo tėvai visuomet buvo palaikantys visoms jo išraiškos formoms. Būnant 9-nių metų Yungblud mama leido jam lakuotis nagus, dažytis lūpas juodu lūpdažiu bei avėti gotų stiliaus batus. Nepaisant to, kad yra tekę ir sulaukti kreivų žvilgsnių bei pasipiktinusių replikų <span class="qua">kaip gali jam tai leisti?</span> iš aplinkinių žmonių, į juos atsakydama ilgu moralu.</p>
+  </div>
+  
+  <div id="Snoop" class="tabcontent">
+    <h1>Snoop Dogg</h1>
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <img src="/pictures/snoop-624-1368121236.webp" alt="pic">
+    <p>Atlikėjas Snoop Lion savo YouTube kanale paskelbė, kad yra rūkęs ,,žolės" prieš pat Baltuosius Rūmus, protestuodamas prieš tuometinį Amerikos prezidentą Donald Trump. Taip, perskaitėte teisingai, prieš pat baltuosius rūmus, prezidento namus. Nors rūkymas marihuaną šalyje yra legalus žmonėms nuo 21 metų, tačiau tai daryti viešumoje yra vis tiek nelegalu ir pažeidžia viešąją tvarką.</p>
+
+    <div class="container">
+    <blockquote>When I'm no longer rapping, I want to open up an ice cream parlor and call myself Scoop Dogg.</blockquote>
+    </div>
+  </div>
+  
+  <div class="flex-container">
+  <button class="tablink" onclick="openCity('Rocky', this, 'gold')" id="defaultOpen">A$AP Rocky</button>
+  <button class="tablink" onclick="openCity('YungBlud', this, 'black')">YungBlud</button>
+  <button class="tablink" onclick="openCity('Snoop', this, 'green')">Snoop Dogg</button>
+  </div>
+  
+  <script src="/script.js"></script>
+</body>
+</html>
